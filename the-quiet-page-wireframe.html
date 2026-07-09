@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Quiet Page - Home</title>
+  <link rel="stylesheet" href="quietpage.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="utility-bar">
+      <select class="language-select" aria-label="Language selector">
+        <option>EN</option>
+        <option>BM</option>
+        <option>ZH</option>
+      </select>
+      <button class="theme-toggle" type="button" aria-label="Switch dark or light mode">&#9790;</button>
+      <form class="search-wrap" role="search">
+        <input type="search" placeholder="Search books, authors, or genres" aria-label="Search books, authors, or genres">
+        <button type="submit" aria-label="Search">Search</button>
+      </form>
+      <a class="cart-button" href="cart.html" aria-label="Shopping cart"><span class="cart-icon" aria-hidden="true">&#128722;</span><span class="cart-count">2</span></a>
+      <a class="icon-button profile-link" href="profile.html" aria-label="User profile">&#128100;Profile</a>
+      <a class="logo" href="the-quiet-page-wireframe.html" aria-label="The Quiet Page home">The Quiet Page</a>
+    </div>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="active" href="the-quiet-page-wireframe.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="shop.html">Shop</a>
+      <a href="writers.html">Writers</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Dark shelves. Soft lamps. Better stories.</p>
+        <h1>The Quiet Page</h1>
+        <p>A moody online bookstore for new releases, free-book moments, guided browsing, and personal recommendations when the next story is hard to choose.</p>
+        <video src="video/reading.mp4"controls autoplay muted loop width="600"></video>
+        <div class="hero-actions">
+          <a class="button" href="shop.html">Shop Books</a>
+          <a class="button secondary" href="#personalize">Personalize</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Auto-scrolling banner">
+      <div class="ticker-track">
+        <span>New release week: signed fantasy editions now available</span>
+        <span>Free book promotion: weekend classics bundle</span>
+        <span>Current offer: buy 2 paperbacks, get 1 quiet read free</span>
+        <span>Writer spotlight: submit your short story collection</span>
+        <span>New release week: signed fantasy editions now available</span>
+        <span>Free book promotion: weekend classics bundle</span>
+        <span>Current offer: buy 2 paperbacks, get 1 quiet read free</span>
+        <span>Writer spotlight: submit your short story collection</span>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="section-heading">
+        <div>
+          <h2>New Releases</h2>
+          <p>Fresh arrivals arranged as a browsable shelf with quick-preview details on hover.</p>
+        </div>
+        <a class="button" href="shop.html">More</a>
+      </div>
+      <div class="shelf">
+        <article class="book" tabindex="0">
+          <div class="popup"><h3>Lantern Roads</h3><p>A reflective road novel about friendship, travel, and finding home slowly.</p><strong>Rating: 4.7 / 5</strong></div>
+          <div class="cover">
+            <img src="image/LR.jpg" alt="Lantern Roads book cover">
+            <strong>Lantern Roads</strong><small>Mira Vale</small>
+            <button class="add-cart" data-book="Lantern Roads">Add to Cart</button>
+          </div>
+        </article>
+        <article class="book" tabindex="0">
+          <div class="popup"><h3>Ink Before Dawn</h3><p>A literary mystery set inside a small-town print shop.</p><strong>Rating: 4.5 / 5</strong></div>
+          <div class="cover">
+            <img src="image/IBD 2.jpg" alt="Ink Before Dawn">
+            <strong>Ink Before Dawn</strong><small>Noah Bell</small>
+            <button class="add-cart" data-book="Ink Before Dawn">Add to Cart</button>
+          </div>
+        </article>
+        <article class="book" tabindex="0">
+          <div class="popup"><h3>The Willow Index</h3><p>Soft science fiction about memory archives and second chances.</p><strong>Rating: 4.8 / 5</strong></div>
+          <div class="cover">
+            <img src="image/TWI 3.jpg" alt="The Willow Index">
+            <strong>The Willow Index</strong><small>Ari Chen</small>
+            <button class="add-cart" data-book="The Willow Index">Add to Cart</button>
+          </div>
+        </article>
+        <article class="book" tabindex="0">
+          <div class="popup"><h3>Salt House Letters</h3><p>Letters from a seaside family reveal a hidden inheritance.</p><strong>Rating: 4.4 / 5</strong></div>
+          <div class="cover">
+             <img src="image/SHL 4.jpg" alt="Salt House Letters">
+            <strong>Salt House Letters</strong><small>Elena Moor</small>
+            <button class="add-cart" data-book="Salt House Letters">Add to Cart</button>
+          </div>
+        </article>
+        <article class="book" tabindex="0">
+          <div class="popup"><h3>Half-Moon Library</h3><p>A cozy fantasy about a librarian who lends impossible books.</p><strong>Rating: 4.9 / 5</strong></div>
+          <div class="cover">
+            <img src="image/HML 5.jpg" alt="Half-Moon Library">
+            <strong>Half-Moon Library</strong><small>Jun Harper</small>
+            <button class="add-cart" data-book="Half-Moon Library">Add to Cart</button>
+          </div>
+        </article>
+        <article class="book" tabindex="0">
+          <div class="popup"><h3>Quiet Cities</h3><p>Essays on solitude, architecture, and places made for thought.</p><strong>Rating: 4.6 / 5</strong></div>
+          <div class="cover">
+            <img src="image/QC 6.jpg" alt="Quiet Cities">
+            <strong>Quiet Cities</strong><small>Samira Holt</small>
+            <button class="add-cart" data-book="Quiet Cities">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="quote-band">
+        <p>"Start with the shelf that matches your mood, then let the synopsis do the whispering."</p>
+        <a class="button secondary" href="#personalize">Need guidance?</a>
+      </div>
+
+      <div class="section-heading">
+        <div>
+          <h2>Comfort Reads</h2>
+          <p>Warm, steady books for evenings, commutes, and slow weekends.</p>
+        </div>
+        <a class="button" href="shop.html">More</a>
+      </div>
+      <div class="shelf">
+        <article class="book" tabindex="0">
+          <div class="popup"><h3>Apricot Porch</h3><p>A gentle family story about recipes, letters, and reconciliation.</p><strong>Rating: 4.6 / 5</strong></div>
+          <div class="cover">
+            <img src="image/AP 7.jpg" alt="Apricot Porch">
+            <strong>Apricot Porch</strong><small>Lina Park</small>
+            <button class="add-cart" data-book="Apricot Porch">Add to Cart</button>
+          </div>
+        </article>
+        <article class="book" tabindex="0">
+          <div class="popup"><h3>Rain at Number Nine</h3><p>A neighborly romance that begins with a borrowed umbrella.</p><strong>Rating: 4.3 / 5</strong></div>
+          <div class="cover">
+            <img src="image/RANN 8.jpg" alt="Rain at Number Nine">
+            <strong>Rain at Number Nine</strong><small>Owen Reed</small>
+            <button class="add-cart" data-book="Rain at Number Nine">Add to Cart</button>
+          </div>
+        </article>
+        <article class="book" tabindex="0">
+          <div class="popup"><h3>Teacup Weather</h3><p>Short stories for quiet afternoons and second cups.</p><strong>Rating: 4.5 / 5</strong></div>
+          <div class="cover">
+            <img src="image/TW 9.jpg" alt="Teacup Weather">
+            <strong>Teacup Weather</strong><small>Nadia Kim</small>
+            <button class="add-cart" data-book="Teacup Weather">Add to Cart</button>
+          </div>
+        </article>
+        <article class="book" tabindex="0">
+          <div class="popup"><h3>The Paper Garden</h3><p>A retired botanist starts a community library in her greenhouse.</p><strong>Rating: 4.8 / 5</strong></div>
+          <div class="cover">
+            <img src="image/TPG 10.jpg" alt="The Paper Garden">
+            <strong>The Paper Garden</strong><small>Vera Lyle</small>
+            <button class="add-cart" data-book="The Paper Garden">Add to Cart</button>
+          </div>
+        </article>
+        <article class="book" tabindex="0">
+          <div class="popup"><h3>Small Window Light</h3><p>Poems about rooms, rituals, and ordinary courage.</p><strong>Rating: 4.4 / 5</strong></div>
+          <div class="cover">
+            <img src="image/SWL 11.jpg" alt="Small Window Light">
+            <strong>Small Window Light</strong><small>Iman Fox</small>
+            <button class="add-cart" data-book="Small Window Light">Add to Cart</button>
+          </div>
+        </article>
+        <article class="book" tabindex="0">
+          <div class="popup"><h3>Borrowed Saturdays</h3><p>A book club comedy about late returns and new beginnings.</p><strong>Rating: 4.2 / 5</strong></div>
+          <div class="cover">
+            <img src="image/BS 12.png" alt="Small Window Light">
+            <strong>Borrowed Saturdays</strong><small>Cal Dean</small>
+            <button class="add-cart" data-book="Borrowed Saturdays">Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="personalize-panel" id="personalize">
+      <div class="panel-inner">
+        <div class="section-heading">
+          <div>
+            <h2>Find My Next Book</h2>
+            <p>Choose a theme, genre, budget, and setting to receive tailored recommendations.</p>
+          </div>
+        </div>
+        <form class="form-grid">
+          <div class="field">
+            <label for="theme">Theme</label>
+            <input id="theme" placeholder="Hope, mystery, healing">
+          </div>
+          <div class="field">
+            <label for="genre">Genre</label>
+            <select id="genre">
+              <option>Literary Fiction</option>
+              <option>Fantasy</option>
+              <option>Mystery</option>
+              <option>Romance</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="price">Price Range</label>
+            <select id="price">
+              <option>Free</option>
+              <option>Under $15</option>
+              <option>$15 - $30</option>
+              <option>$30+</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="setting">Story Setting</label>
+            <input id="setting" placeholder="Seaside town, library, city">
+          </div>
+          <button class="button" type="submit">Personalize</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="writer-callout">
+      <div class="panel-inner">
+        <div>
+          <h2>Write With The Quiet Page</h2>
+          <p>Aspiring and contract writers can submit manuscripts, proposals, or sample chapters for review.</p>
+        </div>
+        <a class="button secondary" href="writers.html">Visit Writers Page</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>The Quiet Page</strong>
+        <p>Copyright 2026. Curated books, quiet recommendations, and reader support.</p>
+      </div>
+      <div class="footer-links">
+        <a href="the-quiet-page-wireframe.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shop.html">Shop</a>
+        <a href="writers.html">Writers</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" type="button" aria-label="Back to top">Top</button>
+  <script src="quietpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Quiet Page - Profile</title>
+  <link rel="stylesheet" href="quietpage.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="utility-bar">
+      <select class="language-select" aria-label="Language selector"><option>EN</option><option>BM</option><option>ZH</option></select>
+      <button class="theme-toggle" type="button" aria-label="Switch dark or light mode">&#9790;</button>
+      <form class="search-wrap" role="search"><input type="search" placeholder="Search books, authors, or genres" aria-label="Search books, authors, or genres"><button type="submit">Search</button></form>
+      <a class="cart-button" href="cart.html" aria-label="Shopping cart"><span class="cart-icon" aria-hidden="true">&#128722;</span><span class="cart-count">2</span></a>
+      <a class="icon-button profile-link" href="profile.html" aria-label="User profile">&#128100;Profile</a>
+      <a class="logo" href="the-quiet-page-wireframe.html">The Quiet Page</a>
+    </div>
+    <nav class="main-nav">
+      <a href="the-quiet-page-wireframe.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="shop.html">Shop</a>
+      <a href="writers.html">Writers</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Reader profile</p>
+        <h1>Your account and settings.</h1>
+        <p>Manage profile details, recommendation preferences, order history, notifications, and display settings.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="content-grid">
+        <article class="content-card profile-card">
+          <h2>Account Overview</h2>
+          <ul class="summary-list">
+            <li><span>Name</span><strong>Quiet Reader</strong></li>
+            <li><span>Email</span><strong>reader@example.com</strong></li>
+            <li><span>Member Tier</span><strong>Gold Shelf</strong></li>
+            <li><span>Saved Books</span><strong>14</strong></li>
+          </ul>
+        </article>
+
+        <article class="content-card profile-card">
+          <h2>Recent Orders</h2>
+          <ul class="summary-list">
+            <li><span>#QP-2041</span><strong>Delivered</strong></li>
+            <li><span>#QP-2033</span><strong>Processing</strong></li>
+            <li><span>#QP-2019</span><strong>Archived</strong></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="panel-inner content-grid">
+        <article class="content-card profile-card">
+          <h2>Settings</h2>
+          <form class="settings-form">
+            <label class="setting-option" for="email-recommendations">
+              <span>Email recommendations</span>
+              <select id="email-recommendations"><option>On</option><option>Off</option></select>
+            </label>
+            <label class="setting-option" for="order-updates">
+              <span>Order updates</span>
+              <select id="order-updates"><option>On</option><option>Off</option></select>
+            </label>
+            <label class="setting-option" for="preferred-language">
+              <span>Preferred language</span>
+              <select id="preferred-language"><option>English</option><option>Malay</option><option>Chinese</option></select>
+            </label>
+            <label class="setting-option" for="default-theme">
+              <span>Default theme</span>
+              <select id="theme-select"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select>
+            </label>
+            <label class="setting-option" for="saved-payment">
+              <span>Saved payment method</span>
+              <select id="saved-payment"><option>Card ending 0427</option><option>PayPal</option><option>None</option></select>
+            </label>
+            <button class="button" type="submit">Update Settings</button>
+          </form>
+        </article>
+
+        <article class="content-card profile-card">
+          <h2>Recommendation Preferences</h2>
+          <form class="email-form">
+            <div class="field"><label for="profile-theme">Preferred Theme</label><input id="profile-theme" placeholder="Hope, mystery, healing"></div>
+            <div class="field"><label for="profile-genre">Favorite Genre</label><select id="profile-genre"><option>Literary Fiction</option><option>Fantasy</option><option>Mystery</option><option>Romance</option></select></div>
+            <div class="field"><label for="profile-budget">Budget Range</label><select id="profile-budget"><option>Free</option><option>Under $15</option><option>$15 - $30</option><option>$30+</option></select></div>
+            <button class="button" type="submit">Save Settings</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>The Quiet Page</strong><p>Copyright 2026. Curated books, quiet recommendations, and reader support.</p></div>
+      <div class="footer-links"><a href="the-quiet-page-wireframe.html">Home</a><a href="about.html">About</a><a href="shop.html">Shop</a><a href="writers.html">Writers</a><a href="cart.html">Cart</a><a href="profile.html">Profile</a></div>
+    </div>
+  </footer>
+  <button class="back-top" type="button">Top</button>
+  <script src="quietpage.js"></script>
+</body>
+</html>

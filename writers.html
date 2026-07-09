@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Quiet Page - Writers</title>
+  <link rel="stylesheet" href="quietpage.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="utility-bar">
+      <select class="language-select" aria-label="Language selector"><option>EN</option><option>BM</option><option>ZH</option></select>
+      <button class="theme-toggle" type="button" aria-label="Switch dark or light mode">&#9790;</button>
+      <form class="search-wrap" role="search"><input type="search" placeholder="Search books, authors, or genres" aria-label="Search books, authors, or genres"><button type="submit">Search</button></form>
+      <a class="cart-button" href="cart.html" aria-label="Shopping cart"><span class="cart-icon" aria-hidden="true">&#128722;</span><span class="cart-count">2</span></a>
+      <a class="icon-button profile-link" href="profile.html" aria-label="User profile">&#128100;Profile</a>
+      <a class="logo" href="the-quiet-page-wireframe.html">The Quiet Page</a>
+    </div>
+    <nav class="main-nav">
+      <a href="the-quiet-page-wireframe.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="shop.html">Shop</a>
+      <a class="active" href="writers.html">Writers</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Writer recruitment</p>
+        <h1>Submit work for the next shelf.</h1>
+        <p>A dedicated page for aspiring and contract writers to understand submissions, proposal needs, and next steps.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="content-grid">
+        <article class="content-card">
+          <h2>What to Submit</h2>
+          <img class="content-photo" src="image/write.jpg" alt="Writer working on a manuscript">
+          <p>Send a synopsis, sample chapter, author bio, genre, target readers, and publication status. Short story collections and serialized fiction are welcome.</p>
+        </article>
+        <article class="content-card">
+          <h2>Review Path</h2>
+          <img class="content-photo" src="image/submit.jpg" alt="Editor reviewing manuscript pages">
+          <p>Submissions are reviewed for fit, reader appeal, editorial readiness, and how well they support The Quiet Page's calm browsing experience.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="writer-callout">
+      <div class="panel-inner">
+        <div>
+          <h2>Ready to share your manuscript?</h2>
+          <p>Use the submission form layout below as the page's main writer recruitment action.</p>
+        </div>
+        <a class="button secondary" href="#submit">Start Submission</a>
+      </div>
+    </section>
+
+    <section class="page-section" id="submit">
+      <div class="section-heading"><div><h2>Submission Form</h2><p>Wireframe fields for aspiring and contract writers.</p></div></div>
+      <form class="form-grid">
+        <div class="field"><label for="writer-name">Name</label><input id="writer-name" placeholder="Writer name"></div>
+        <div class="field"><label for="work-type">Work Type</label><select id="work-type"><option>Novel</option><option>Short Stories</option><option>Poetry</option><option>Nonfiction</option></select></div>
+        <div class="field"><label for="writer-genre">Genre</label><input id="writer-genre" placeholder="Fantasy, literary, mystery"></div>
+        <div class="field"><label for="writer-email">Email</label><input id="writer-email" type="email" placeholder="you@example.com"></div>
+        <button class="button" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><strong>The Quiet Page</strong><p>Copyright 2026. Curated books, quiet recommendations, and reader support.</p></div>
+      <div class="footer-links"><a href="the-quiet-page-wireframe.html">Home</a><a href="about.html">About</a><a href="shop.html">Shop</a><a href="writers.html">Writers</a></div>
+    </div>
+  </footer>
+  <button class="back-top" type="button">Top</button>
+  <script src="quietpage.js"></script>
+</body>
+</html>
